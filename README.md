@@ -4,9 +4,18 @@
 
 The best-ever snow effect for the web. Drop one file on a page and it snows.
 
+![Snowstorm screenshot](./screenshot.png)
+
 This is **DHTML Snowstorm** by [Scott Schiller](http://schillmania.com/projects/snowstorm/),
 a tiny, dependency-free JavaScript snow effect that has been "making it snow on the
 internets since 2003".
+
+## A little history
+
+This script is **10 to 15+ years old**. I originally found it years ago on a
+[ucoz.com](https://www.ucoz.com) website-builder site and have been carefully saving
+it ever since. Honestly, it's **literally the best snow script I have ever seen** —
+and I don't want it to get lost.
 
 - **File:** `snow.js`
 - **License:** BSD — see <http://schillmania.com/projects/snowstorm/license.txt>
@@ -106,5 +115,5 @@ browsers it falls back to `setTimeout`-based animation automatically.
 
 ## License
 
-BSD License. Copyright (c) 2007, Scott Schiller. All rights reserved.
-See <http://schillmania.com/projects/snowstorm/license.txt>.
+BSD License. Copyright (c) 2003, Scott Schiller (schillmania.com). All rights reserved.
+See [`LICENSE`](./LICENSE).

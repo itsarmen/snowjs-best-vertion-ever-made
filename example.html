@@ -79,30 +79,12 @@
         <button class="btn" id="toggle-snow">Toggle snow</button>
     </div>
 
-    <!-- 1) Load the snow script -->
+    <!-- 1) Load the original snow script (unmodified, default settings) -->
     <script src="snow.js" type="text/javascript"></script>
 
-    <!-- 2) Optionally customize it BEFORE the page finishes loading (the effect auto-starts on window load) -->
+    <!-- 2) The effect starts automatically on load with its original defaults.
+            Only a toggle button is wired up here (no settings are changed). -->
     <script type="text/javascript">
-        // All options are optional — these are just showing what you can tweak.
-        snowStorm.snowColor = '#eef6ff';      // flake color
-        snowStorm.flakesMax = 128;            // total flakes created
-        snowStorm.flakesMaxActive = 64;       // max falling at once
-        snowStorm.animationInterval = 33;     // ms per frame (lower = smoother, more CPU)
-        snowStorm.useGPU = true;              // hardware-accelerated movement
-        snowStorm.snowStick = true;           // snow collects at the bottom
-        snowStorm.useMeltEffect = true;       // melting/fading
-        snowStorm.useTwinkleEffect = false;   // random flicker
-        snowStorm.followMouse = false;        // wind follows the mouse
-        snowStorm.excludeMobile = true;       // don't run on mobile (CPU/battery friendly)
-        snowStorm.snowCharacter = '❄';        // flake glyph (&bull; or * also work well)
-
-        // Manual control is also available:
-        // snowStorm.stop();         // stop and hide
-        // snowStorm.start();        // start
-        // snowStorm.freeze();       // pause
-        // snowStorm.resume();       // resume
-
         document.getElementById('toggle-snow').addEventListener('click', function () {
             snowStorm.toggleSnow();
         });
